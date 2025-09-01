@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community & College Involvement Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* --- Global Styles --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: #f4f8fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #004d99;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* --- Section Styling --- */
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #004d99;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #ffcc00;
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* --- Achievements List --- */
+    ul {
+      margin-left: 20px;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #004d99;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* --- Scroll to Top Button --- */
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #004d99;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    #topBtn:hover {
+      background: #ffcc00;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Community & College Involvement</h1>
+    <p>Showcasing My Contributions and Participation</p>
+    <nav>
+      <a href="#community">Community Work</a>
+      <a href="#college">College Activities</a>
+      <a href="#achievements">Achievements</a>
+    </nav>
+  </header>
+
+  <!-- Community Work Section -->
+  <section id="community">
+    <h2>Community Work</h2>
+    <div class="card">
+      <h3>Volunteering at Local NGOs</h3>
+      <p>Actively engaged in community service projects such as literacy campaigns, food distribution drives, and environmental awareness programs.</p>
+    </div>
+    <div class="card">
+      <h3>Blood Donation Camps</h3>
+      <p>Regularly participated in and coordinated blood donation camps, helping save lives and raise awareness about healthcare needs.</p>
+    </div>
+  </section>
+
+  <!-- College Activities Section -->
+  <section id="college">
+    <h2>College Activities</h2>
+    <div class="card">
+      <h3>Student Council Member</h3>
+      <p>Represented students’ interests, organized cultural and academic events, and helped create a supportive campus environment.</p>
+    </div>
+    <div class="card">
+      <h3>Technical Club Involvement</h3>
+      <p>Contributed to organizing hackathons, coding workshops, and knowledge-sharing sessions to build technical skills among peers.</p>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Recognized as "Best Volunteer" by NSS for community service efforts.</li>
+        <li>Awarded "Outstanding Student Leader" for college event coordination.</li>
+        <li>Successfully led a fundraising campaign for underprivileged students.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Digital Portfolio | Community & College Involvement</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="topBtn">↑</button>
+
+  <script>
+    // Show button when scrolling
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    // Scroll to top on click
+    topBtn.onclick = function() {
+      window.scrollTo({top: 0, behavior: "smooth"});
+    };
+  </script>
+
+</body>
+  </html>
